@@ -113,16 +113,20 @@ document.addEventListener('DOMContentLoaded', async () => {
             ? 'https://madpm.co' // Muted fallback url for local tests
             : window.location.href;
             
-        const textMessage = "Stop wasting time building products nobody wants! Check out MADpm, a community-driven repository to capture and validate real-world problems first:";
-        const twitterMessage = "Master the problem before you build the solution. Check out MADpm, a community for problem-first validation:";
+        const textMessage = "Stop wasting time building products nobody wants! Check out MAD^pm, a community-driven repository to capture and validate real-world problems first:";
+        const twitterMessage = "Master the problem before you build the solution. Check out MAD^pm, a community for problem-first validation:";
         
         const waLink = `https://api.whatsapp.com/send?text=${encodeURIComponent(textMessage + " " + pageUrl)}`;
         const twLink = `https://twitter.com/intent/tweet?text=${encodeURIComponent(twitterMessage)}&url=${encodeURIComponent(pageUrl)}`;
         const liLink = `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(pageUrl)}`;
         
-        document.getElementById('share-whatsapp').href = waLink;
-        document.getElementById('share-twitter').href = twLink;
-        document.getElementById('share-linkedin').href = liLink;
+        const waEl = document.getElementById('share-whatsapp');
+        const twEl = document.getElementById('share-twitter');
+        const liEl = document.getElementById('share-linkedin');
+        
+        if (waEl) waEl.href = waLink;
+        if (twEl) twEl.href = twLink;
+        if (liEl) liEl.href = liLink;
         
         // Modal success sharing
         const modalWaBtn = document.getElementById('btn-share-modal-wa');
@@ -417,4 +421,21 @@ document.addEventListener('DOMContentLoaded', async () => {
             await openAdminDashboard();
         }
     });
+
+    // ----------------------------------------------------
+    // Spotlight Hover Glow Tracking (Cursor spotlight tracking)
+    // ----------------------------------------------------
+    const initSpotlight = () => {
+        const spotlightElements = document.querySelectorAll('.glass-card, .comparison-card, .persona-card, .timeline-step, .metric-card, .btn');
+        spotlightElements.forEach(element => {
+            element.addEventListener('mousemove', e => {
+                const rect = element.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+                element.style.setProperty('--x', `${x}px`);
+                element.style.setProperty('--y', `${y}px`);
+            });
+        });
+    };
+    initSpotlight();
 });

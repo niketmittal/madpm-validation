@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MADpm — Make a Difference, Problem Master</title>
+    
+    <!-- SEO & Social Sharing Metadata -->
+    <meta name="description" content="MADpm is a community-driven, problem-first platform to systematically capture, discuss, qualify, and solve real-world problems before building solutions.">
+    <meta name="keywords" content="product management, problem discovery, startups, idea validation, early career, portfolios">
+    <meta property="og:title" content="MADpm — Before You Build, Master the Problem">
+    <meta property="og:description" content="A problem-first community repository to capture and validate real-world problems with diverse minds. Join the early access queue.">
+    <meta property="og:image" content="madpm_preview.png">
+    <meta property="og:type" content="website">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Top Glow Effects -->
+    <div class="bg-glow bg-glow-1"></div>
+    <div class="bg-glow bg-glow-2"></div>
+
+    <!-- Navigation Header -->
+    <header class="header">
+        <div class="container nav-container">
+            <a href="#" class="logo-wrapper">
+                <svg class="logo-icon" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                </svg>
+                <div class="logo-text">
+                    <span class="logo-title">MADpm</span>
+                    <span class="logo-subtitle">Problem Master</span>
+                </div>
+            </a>
+            <nav class="nav-links">
+                <a href="#philosophy" class="nav-link">Philosophy</a>
+                <a href="#simulator" class="nav-link">How it Works</a>
+                <a href="#personas" class="nav-link">For You</a>
+            </nav>
+            <button class="btn btn-primary open-early-access">Join Early Access</button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="section hero-section">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <div class="badge">🔥 PROBLEM-FIRST COMMUNITY</div>
+                    <h1 class="hero-title">
+                        First-Class Problems Deserve <span class="text-gradient">First-Class Solutions</span>
+                    </h1>
+                    <p class="hero-description">
+                        Most products fail because they solve the wrong problem. MADpm is a community-driven repository to capture, structure, and validate real-world problems before writing a single line of code.
+                    </p>
+                    <div class="hero-actions">
+                        <button class="btn btn-primary btn-lg open-early-access pulse-glow">Join Early Access</button>
+                        <a href="#simulator" class="btn btn-secondary btn-lg">See How It Works</a>
+                    </div>
+                    <div class="social-proof">
+                        <div class="avatars">
+                            <span class="avatar" style="background-color: #6366F1;">PM</span>
+                            <span class="avatar" style="background-color: #10B981;">ENG</span>
+                            <span class="avatar" style="background-color: #EC4899;">DES</span>
+                            <span class="avatar" style="background-color: #F59E0B;">ST</span>
+                        </div>
+                        <p class="social-proof-text">
+                            Join PMs, engineers, designers & students collaborating to validate ideas.
+                        </p>
+                    </div>
+                </div>
+                <div class="hero-image-wrapper">
+                    <div class="hero-card-glow"></div>
+                    <div class="hero-image-card">
+                        <img src="madpm_preview.png" alt="MADpm Analytics Preview" class="hero-img">
+                        <div class="card-overlay-badge">
+                            <div class="badge-dot"></div> Live Validation Active
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Viral Share Bar -->
+        <section class="share-bar-section">
+            <div class="container">
+                <div class="share-bar-card glass-card">
+                    <p class="share-text">📢 Help us validate the MADpm concept! Share it in your networks:</p>
+                    <div class="share-buttons">
+                        <a href="#" id="share-whatsapp" class="btn-share share-wa" target="_blank">
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.513 2.262 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.457L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.86-4.37 9.864-9.799.002-2.63-1.023-5.101-2.885-6.965C16.528 2.01 14.069.99 11.444.99 6.01.99 1.586 5.358 1.583 10.787c-.001 1.719.456 3.395 1.324 4.896l-.992 3.626 3.732-.965zm12.385-6.426c-.33-.165-1.951-.951-2.251-1.06-.3-.11-.518-.165-.736.165-.218.33-.842 1.06-1.031 1.28-.19.219-.38.243-.71.079-.33-.165-1.395-.508-2.657-1.62-1.002-.882-1.678-1.972-1.875-2.302-.197-.33-.021-.508.143-.672.149-.148.33-.385.496-.578.165-.192.22-.33.33-.55.11-.22.055-.412-.027-.577-.082-.165-.736-1.748-1.01-2.407-.267-.643-.56-.554-.736-.563-.17-.008-.367-.01-.565-.01-.197 0-.518.073-.789.367-.27.293-1.03 1.007-1.03 2.457 0 1.451 1.07 2.853 1.218 3.053.15.2 2.106 3.178 5.1 4.453.712.304 1.269.486 1.703.623.714.225 1.365.193 1.88.117.573-.085 1.951-.787 2.226-1.547.275-.76.275-1.411.193-1.547-.082-.136-.299-.219-.628-.384z"/></svg>
+                            WhatsApp Groups
+                        </a>
+                        <a href="#" id="share-twitter" class="btn-share share-tw" target="_blank">
+                            <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                            Post on X
+                        </a>
+                        <a href="#" id="share-linkedin" class="btn-share share-li" target="_blank">
+                            <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M22.23 0H1.77C.8 0 0 .77 0 1.72v20.56C0 23.23.8 24 1.77 24h20.46c.98 0 1.77-.77 1.77-1.72V1.72C24 .77 23.2 0 22.23 0zM7.12 20.45H3.56V9h3.56v11.45zM5.34 7.43c-1.14 0-2.06-.92-2.06-2.06 0-1.14.92-2.06 2.06-2.06 1.14 0 2.06.92 2.06 2.06 0 1.14-.92 2.06-2.06 2.06zm15.11 13.02h-3.56v-5.6c0-1.34-.03-3.05-1.86-3.05-1.86 0-2.14 1.45-2.14 2.95v5.7h-3.56V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29z"/></svg>
+                            Share on LinkedIn
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Philosophy Section -->
+        <section id="philosophy" class="section philosophy-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">The Solution-First Trap vs. <span class="text-gradient">The MADpm Way</span></h2>
+                    <p class="section-subtitle">We have spent years building answers to questions nobody was asking. It's time to shift the paradigm.</p>
+                </div>
+                
+                <div class="comparison-grid">
+                    <div class="comparison-card card-reality">
+                        <div class="comparison-badge badge-reality">THE REALITY TODAY</div>
+                        <h3 class="comparison-card-title">Solution-First Chaos</h3>
+                        <ul class="comparison-list">
+                            <li>
+                                <div class="list-icon icon-red">❌</div>
+                                <div><strong>Scatterbrained Observations:</strong> Frustrations are lost in Reddit threads, Twitter rants, and forgotten Notion pages.</div>
+                            </li>
+                            <li>
+                                <div class="list-icon icon-red">❌</div>
+                                <div><strong>Anecdotal Validation:</strong> Validation is based on a single client's feedback or a founder's loudest bias.</div>
+                            </li>
+                            <li>
+                                <div class="list-icon icon-red">❌</div>
+                                <div><strong>Blind Iterations:</strong> Teams build high-fidelity MVPs only to discover the core problem doesn't exist or isn't severe.</div>
+                            </li>
+                            <li>
+                                <div class="list-icon icon-red">❌</div>
+                                <div><strong>Output-Only Portfolios:</strong> Early professionals show "Spotify Clones" instead of demonstrating how they observe and evaluate issues.</div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="comparison-card card-madpm">
+                        <div class="comparison-badge badge-madpm">THE MADPM SOLUTION</div>
+                        <h3 class="comparison-card-title text-gradient">Problem-First Clarity</h3>
+                        <ul class="comparison-list">
+                            <li>
+                                <div class="list-icon icon-green">✅</div>
+                                <div><strong>Structured Capture:</strong> Every problem statement defines Context, Triggers, Affected Cohorts, and Existing Alternatives.</div>
+                            </li>
+                            <li>
+                                <div class="list-icon icon-green">✅</div>
+                                <div><strong>Community Signal Processing:</strong> Problems are upvoted by severity, critiqued, and cross-referenced with domain experts.</div>
+                            </li>
+                            <li>
+                                <div class="list-icon icon-green">✅</div>
+                                <div><strong>Pre-validated Demand:</strong> Startups browse curated, qualified problem sets to find what users actually struggle with.</div>
+                            </li>
+                            <li>
+                                <div class="list-icon icon-green">✅</div>
+                                <div><strong>Verified Proof of Thinking:</strong> Solvers build public portfolios showcasing high-scoring problem canvases and reviews.</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Step-by-Step Simulator (Biswa's Travel Tech Case Study) -->
+        <section id="simulator" class="section simulator-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">The Platform Journey: <span class="text-gradient">Biswa's Case Study</span></h2>
+                    <p class="section-subtitle">Trace how an observation transforms into opportunities in 4 simple stages.</p>
+                </div>
+
+                <div class="simulator-wrapper glass-card">
+                    <!-- Progress Timeline Indicators -->
+                    <div class="timeline-steps">
+                        <div class="timeline-step active" data-step="1">
+                            <div class="step-num">1</div>
+                            <div class="step-label">Observe</div>
+                        </div>
+                        <div class="timeline-step" data-step="2">
+                            <div class="step-num">2</div>
+                            <div class="step-label">Enrich</div>
+                        </div>
+                        <div class="timeline-step" data-step="3">
+                            <div class="step-num">3</div>
+                            <div class="step-label">Validate</div>
+                        </div>
+                        <div class="timeline-step" data-step="4">
+                            <div class="step-num">4</div>
+                            <div class="step-label">Connect</div>
+                        </div>
+                    </div>
+
+                    <!-- Slide Contents -->
+                    <div class="simulator-slides">
+                        <div class="slide active" id="slide-1">
+                            <div class="slide-grid">
+                                <div class="slide-text">
+                                    <div class="slide-step-badge">STAGE 1: CAPTURING THE OBSERVATION</div>
+                                    <h3 class="slide-title">Biswa notices a real gap in travel booking</h3>
+                                    <p class="slide-desc">
+                                        As an avid traveler, Biswa finds that booking group trips is chaotic. While booking websites exist (solutions), none coordinate the consensus phase where 5 friends argue about budgets. He documents this specific, structured observation.
+                                    </p>
+                                    <div class="slide-action-box">
+                                        <div class="quote-text">"We spend 8 hours in WhatsApp chats voting on stays, only for the hotel to sell out before we agree."</div>
+                                    </div>
+                                </div>
+                                <div class="slide-visual">
+                                    <div class="mock-ui">
+                                        <div class="ui-header">Biswa's Dashboard</div>
+                                        <div class="ui-content">
+                                            <div class="ui-post">
+                                                <div class="ui-user">✈️ Travel Tech Domain</div>
+                                                <div class="ui-msg">Observed: Group Travel Consensus Paralysis</div>
+                                                <div class="ui-tag">Severity: 8.5/10</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="slide" id="slide-2">
+                            <div class="slide-grid">
+                                <div class="slide-text">
+                                    <div class="slide-step-badge">STAGE 2: COMMUNITY COLLABORATIVE ENRICHMENT</div>
+                                    <h3 class="slide-title">Diverse minds add depth and perspectives</h3>
+                                    <p class="slide-desc">
+                                        Engineers join the discussion pointing out APIs, Designers discuss UI paradigms, and seasoned travelers outline how the problem shifts across demographics. Biswa's single post evolves into a domain matrix.
+                                    </p>
+                                    <div class="comments-preview">
+                                        <div class="cmt"><span class="cmt-user">Dev_Kavita:</span> "Agreed. Multi-destinations split-bills are hard APIs."</div>
+                                        <div class="cmt"><span class="cmt-user">Des_Rahul:</span> "Figma face-pile UX could solve consensus delays here."</div>
+                                    </div>
+                                </div>
+                                <div class="slide-visual">
+                                    <div class="mock-ui">
+                                        <div class="ui-header">Collaborative Thread</div>
+                                        <div class="ui-content">
+                                            <div class="ui-pulse-lines">
+                                                <div class="line"></div>
+                                                <div class="line"></div>
+                                                <div class="line"></div>
+                                            </div>
+                                            <p style="font-size:12px; color:#10B981; text-align:center;">✨ Structured Comments Thread Loaded</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="slide" id="slide-3">
+                            <div class="slide-grid">
+                                <div class="slide-text">
+                                    <div class="slide-step-badge">STAGE 3: EXPERT ANNOTATION & SIGNAL VALIDATION</div>
+                                    <h3 class="slide-title">Platform awards signals and validation index</h3>
+                                    <p class="slide-desc">
+                                        A senior product manager in Travel-Tech annotates the problem, validating that companies lose 18% booking conversions during consensus delays. The problem becomes a qualified "Gold Grade Specification".
+                                    </p>
+                                    <div class="validation-badge-matrix">
+                                        <div class="v-pill">🏅 Gold Grade</div>
+                                        <div class="v-pill">🔒 Verified Demographics</div>
+                                        <div class="v-pill">📈 severity index 8.7</div>
+                                    </div>
+                                </div>
+                                <div class="slide-visual">
+                                    <div class="mock-ui">
+                                        <div class="ui-header">Validation Panel</div>
+                                        <div class="ui-content" style="display:flex; flex-direction:column; justify-content:center; align-items:center; gap:10px;">
+                                            <div class="glow-ring">
+                                                <span style="font-size:24px; font-weight:800; color:#10B981;">8.7</span>
+                                            </div>
+                                            <p style="font-size:11px; color:#9CA3AF;">Community validation verified</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="slide" id="slide-4">
+                            <div class="slide-grid">
+                                <div class="slide-text">
+                                    <div class="slide-step-badge">STAGE 4: UNLOCKING CAREERS AND PROJECTS</div>
+                                    <h3 class="slide-title">Biswa lands roles based on proof of thinking</h3>
+                                    <p class="slide-desc">
+                                        Instead of resumes, hiring managers browse the MADpm repository for analytical thinkers. A travel-tech startup reviews Biswa's structured problem specification, sees his peer endorsements, and hires him as a Product Manager.
+                                    </p>
+                                    <div class="slide-action-box" style="border-left-color:#10B981;">
+                                        <div style="font-weight:700; color:#F9FAFB;">Hiring Offer Received!</div>
+                                        <div style="font-size:12px; color:#9CA3AF;">"Your analysis of booking drop-offs was more impressive than any resume case study."</div>
+                                    </div>
+                                </div>
+                                <div class="slide-visual">
+                                    <div class="mock-ui">
+                                        <div class="ui-header">Offer Inbox</div>
+                                        <div class="ui-content" style="padding:15px;">
+                                            <div style="background:rgba(16,185,129,0.1); border: 1px solid #10B981; border-radius:6px; padding:10px; font-size:12px;">
+                                                <strong>From: TravelGlobal Inc.</strong>
+                                                <p style="margin:5px 0 0 0; color:#d1d5db;">"We saw your Travel Consensus problem room. Let's talk job details."</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Simulator Controls -->
+                    <div class="simulator-controls">
+                        <button class="btn btn-secondary" id="sim-prev" disabled>Previous Step</button>
+                        <button class="btn btn-primary" id="sim-next">Next Step</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Persona Value Propositions (Interactive Switcher) -->
+        <section id="personas" class="section personas-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Designed for Anyone Who <span class="text-gradient">Obsess Over Problems</span></h2>
+                    <p class="section-subtitle">Select your path to see how MADpm transforms your perspective.</p>
+                </div>
+
+                <div class="persona-switcher">
+                    <button class="persona-tab active" data-persona="solvers">Students & Solvers</button>
+                    <button class="persona-tab" data-persona="founders">Founders & PMs</button>
+                    <button class="persona-tab" data-persona="observers">Domain Observers</button>
+                </div>
+
+                <div class="persona-display glass-card">
+                    <!-- Solvers Pane -->
+                    <div class="persona-pane active" id="pane-solvers">
+                        <div class="pane-grid">
+                            <div>
+                                <h3 class="pane-title">Build a Portfolio That Screams "Analytical Thinker"</h3>
+                                <p class="pane-desc">
+                                    Resume bullet points are weak. Showing "clone projects" proves you can write code, not that you understand value. MADpm gives you a structured sandbox to outline problems, gather real feedback, and build a portfolio of validated research.
+                                </p>
+                                <div class="pane-bullets">
+                                    <div class="bullet-item">✨ Proof-of-thinking portfolio builder</div>
+                                    <div class="bullet-item">📈 Real validation indicators and expert annotations</div>
+                                    <div class="bullet-item">💼 Direct recruiter outreach channels</div>
+                                </div>
+                            </div>
+                            <div class="pane-illustration">
+                                <div class="metric-card">
+                                    <div class="metric-title">Solvers Reputation Matrix</div>
+                                    <div class="metric-val">MADpm Score: 850</div>
+                                    <div class="progress-bar-wrapper">
+                                        <div class="progress-bar-fill" style="width: 85%;"></div>
+                                    </div>
+                                    <span class="metric-footnote">Top 5% Problem Observer in FinTech</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Founders Pane -->
+                    <div class="persona-pane" id="pane-founders">
+                        <div class="pane-grid">
+                            <div>
+                                <h3 class="pane-title">Stop Building Products Nobody Wants</h3>
+                                <p class="pane-desc">
+                                    User research panels are expensive, bias-prone, and slow. MADpm gives startup founders a live, continuous feed of structured, high-severity problems directly documented by users and verified by niche experts.
+                                </p>
+                                <div class="pane-bullets">
+                                    <div class="bullet-item">🔍 Tap into raw user workarounds and pain points</div>
+                                    <div class="bullet-item">⚡ Validate your hypotheses in 48 hours</div>
+                                    <div class="bullet-item">💡 Discover high-affinity early adopters before building</div>
+                                </div>
+                            </div>
+                            <div class="pane-illustration">
+                                <div class="metric-card">
+                                    <div class="metric-title">Research Budget Saved</div>
+                                    <div class="metric-val text-green">$4,200+</div>
+                                    <p class="metric-footnote" style="margin-top:5px;">Average savings on initial qualitative user validation panels.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Observers Pane -->
+                    <div class="persona-pane" id="pane-observers">
+                        <div class="pane-grid">
+                            <div>
+                                <h3 class="pane-title">Give Your Everyday Frustrations a Voice</h3>
+                                <p class="pane-desc">
+                                    You experience broken systems every day—in travel, banking, hospital check-ins, or coding. Don't let those frustrations go to waste. Share them with structured precision, help developers build tools that actually work, and gain recognition.
+                                </p>
+                                <div class="pane-bullets">
+                                    <div class="bullet-item">📝 Easy 3-minute problem submitter</div>
+                                    <div class="bullet-item">🌟 Gain prestige and expert status in your domain</div>
+                                    <div class="bullet-item">🤝 Help shape the software you use daily</div>
+                                </div>
+                            </div>
+                            <div class="pane-illustration">
+                                <div class="metric-card">
+                                    <div class="metric-title">Observations Logged</div>
+                                    <div class="metric-val text-violet">12,450+</div>
+                                    <p class="metric-footnote" style="margin-top:5px;">Real-world friction logs validated by community engineers.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final CTA Area -->
+        <section class="section final-cta-section">
+            <div class="container text-center">
+                <h2 class="final-title">Are you ready to think <span class="text-gradient">Problem-First?</span></h2>
+                <p class="final-desc">Join the queue for MADpm. Let's make a difference together.</p>
+                <button class="btn btn-primary btn-lg open-early-access pulse-glow">Claim Your Early Access</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer-area">
+        <div class="container footer-content">
+            <p>&copy; 2026 MADpm. Make a Difference. Master the Problem.</p>
+            <div class="footer-links">
+                <a href="#philosophy">Philosophy</a>
+                <a href="#simulator">Simulator</a>
+                <span class="footer-dot">·</span>
+                <a href="#" id="open-admin" class="admin-trigger">Creator Dashboard</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Early Access Modal Dialog -->
+    <div class="modal-overlay" id="signup-modal">
+        <div class="modal-content glass-card">
+            <button class="modal-close" id="close-modal">&times;</button>
+            
+            <div class="modal-header-section">
+                <h3 class="modal-title">Secure Early Access</h3>
+                <p class="modal-subtitle">Join MADpm to validate problems, build portfolios, or build products.</p>
+            </div>
+
+            <!-- Form State -->
+            <form id="early-access-form" class="modal-form">
+                <div class="form-row-2col">
+                    <div class="form-group">
+                        <label class="form-label" for="user-name">Full Name</label>
+                        <input type="text" id="user-name" class="form-input" required placeholder="e.g. John Doe">
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label" for="user-email">Email Address</label>
+                        <input type="email" id="user-email" class="form-input" required placeholder="e.g. john@example.com">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">I want to use MADpm primarily to:</label>
+                    <div class="role-grid">
+                        <label class="role-card">
+                            <input type="radio" name="user-role" value="solver" checked>
+                            <span class="role-card-inner">
+                                <span class="role-card-icon">🎓</span>
+                                <span class="role-card-title">Practice & Portfolio</span>
+                                <span class="role-card-desc">Showcase analytical skills, build case studies, and get hired.</span>
+                            </span>
+                        </label>
+                        <label class="role-card">
+                            <input type="radio" name="user-role" value="founder">
+                            <span class="role-card-inner">
+                                <span class="role-card-icon">🚀</span>
+                                <span class="role-card-title">Validate Problems</span>
+                                <span class="role-card-desc">Confirm product demand, research alternatives, and recruit.</span>
+                            </span>
+                        </label>
+                        <label class="role-card">
+                            <input type="radio" name="user-role" value="observer">
+                            <span class="role-card-inner">
+                                <span class="role-card-icon">👁️</span>
+                                <span class="role-card-title">Log Friction</span>
+                                <span class="role-card-desc">Share daily frustrations, voice complaints, and help builders.</span>
+                            </span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" for="user-problem">What's the biggest problem you observed today? (Optional)</label>
+                    <textarea id="user-problem" class="form-textarea" rows="2" placeholder="e.g. Booking split group travel, tracking remote work hours fairly..."></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-block">Get Early Access</button>
+            </form>
+
+            <!-- Success State (hidden initially) -->
+            <div id="signup-success" class="modal-success-state" style="display:none;">
+                <div class="success-icon">✓</div>
+                <h3 class="success-title">You're in the Queue!</h3>
+                <p class="success-desc">Thank you for joining MADpm. We are building the registry. Invite colleagues to speed up your verification.</p>
+                <div class="share-box">
+                    <p style="font-size:12px; margin-bottom:10px; color:#9ca3af;">Direct WhatsApp Invite Link:</p>
+                    <button class="btn btn-secondary btn-sm" id="btn-share-modal-wa">Share on WhatsApp</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Admin Panel / Lead Dashboard Modal (hidden initially) -->
+    <div class="modal-overlay" id="admin-modal">
+        <div class="modal-content glass-card admin-modal-content">
+            <button class="modal-close" id="close-admin-modal">&times;</button>
+            
+            <div class="modal-header-section">
+                <h3 class="modal-title">Creator Dashboard</h3>
+                <p class="modal-subtitle">Review early access leads collected for validating the idea.</p>
+            </div>
+
+            <div class="admin-actions">
+                <button class="btn btn-primary btn-sm" id="btn-export-csv">Download CSV</button>
+                <button class="btn btn-secondary btn-sm" id="btn-clear-leads">Clear Mock Leads</button>
+            </div>
+
+            <div class="leads-table-container">
+                <table class="leads-table" id="leads-table">
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Role</th>
+                            <th>Problem Observation</th>
+                        </tr>
+                    </thead>
+                    <tbody id="leads-table-body">
+                        <!-- Leads dynamically inserted here -->
+                    </tbody>
+                </table>
+                <div id="no-leads" class="no-leads-msg">No leads collected yet. Submit the form to see leads here!</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script type="module" src="app.js"></script>
+</body>
+</html>

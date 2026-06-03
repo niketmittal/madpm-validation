@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="12" fill="#000000"/>
+
+  <!-- Caret / Elevation -->
+  <path d="M24 18 L32 10 L40 18"
+        fill="none"
+        stroke="#FFFFFF"
+        stroke-width="4"
+        stroke-linecap="round"
+        stroke-linejoin="round"/>
+
+  <!-- Symmetric Infinity-M Hybrid -->
+  <path d="M16 40
+           C16 30, 24 30, 30 38
+           C32 41, 32 41, 34 38
+           C40 30, 48 30, 48 40
+           C48 50, 40 50, 34 42
+           C32 39, 32 39, 30 42
+           C24 50, 16 50, 16 40"
+        fill="none"
+        stroke="#FFFFFF"
+        stroke-width="4"
+        stroke-linecap="round"
+        stroke-linejoin="round"/>
+</svg>

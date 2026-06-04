@@ -1155,9 +1155,7 @@ form.addEventListener('submit', async function (e) {
     : sanitise(ddChosen);
   data.ts = new Date().toISOString();
   data.date = data.ts.split('T')[0];
-
   /* Persist to Firebase or localStorage */
-  var seat = null;
   if (useFirebase) {
     try {
       await addDoc(collection(db, "leads"), data);
@@ -1170,19 +1168,12 @@ form.addEventListener('submit', async function (e) {
     saveLocalLead(data);
   }
 
-  /* Seat number from localStorage */
-  try {
-    var count = parseInt(localStorage.getItem('madpm_seat_count') || '0', 10);
-    seat = count + 1;
-    localStorage.setItem('madpm_seat_count', String(seat));
-  } catch (_) { seat = null; }
-
   /* Show success */
   form.style.display = 'none';
   successEl.classList.add('on');
   var first = data.fullName ? data.fullName.split(' ')[0] : '';
   sMsg.textContent  = "We'll be in touch" + (first ? ', ' + first : '') + '.';
-  sSeat.textContent = seat ? 'You are founding member #' + seat : 'Your spot is reserved.';
+  sSeat.textContent = 'Your spot is reserved.';
   successEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
 });
 
@@ -1190,4 +1181,3 @@ form.addEventListener('submit', async function (e) {
 </script>
 </body>
 </html>
-

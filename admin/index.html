@@ -538,6 +538,7 @@ tr:last-child td {
               <option value="pm">Product Manager</option>
               <option value="founder">Founder / Co-Founder</option>
               <option value="hiring">Hiring Manager</option>
+              <option value="aspiring">Aspiring PM</option>
               <option value="other">Other</option>
             </select>
           </div>
@@ -852,6 +853,7 @@ import { getFirestore, collection, query, where, getDocs, doc, deleteDoc, orderB
       if (roleName === 'pm') roleName = 'Product Manager';
       if (roleName === 'founder') roleName = 'Founder';
       if (roleName === 'hiring') roleName = 'Hiring Mgr';
+      if (roleName === 'aspiring') roleName = 'Aspiring PM';
       if (roleName === 'other') roleName = 'Other';
 
       // Safe copy values
